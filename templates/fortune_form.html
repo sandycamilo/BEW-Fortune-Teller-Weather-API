@@ -6,19 +6,21 @@
 
     <body>
         <h1>Welcome to Fortune Teller&trade;! Fill out the form below to determine your future.</h1>
-        <form action="/fortune_results" method="GET">
+
+        <form action="/fortune_results" method="GET" target="_blank">
             <p>What is your name? <input type="text" name="FirstName"><br></p>
             <p>How many siblings do you have? <input type="number"><br></p>
             What is your favorite beverage?
             <select>
-                <option value="volvo">Water</option>
-                <option value="saab">Chai</option>
-                <option value="opel">Orange Juice</option>
-                <option value="audi">Coconut Water</option>
+                <option value="water">Water</option>
+                <option value="chai">Chai</option>
+                <option value="oj">Orange Juice</option>
+                <option value="coconutwater">Coconut Water</option>
             </select>
             <p>What is your favorite animal?</p>
             <p><input type="radio" name="animal" value="Bear">Bear<br></p>
             <p><input type="radio" name="animal" value="Whale">Whale<br></p>
+            <p><input type="radio" name="animal" value="Unicorn">Unicorn<br></p>
             <p>What cities have you been to? Check all that apply.</p>
             <p><input type="checkbox" name="city1" value="Seattle">Seattle<br>
                 <input type="checkbox" name="city2" value="Portland">Portland<br>

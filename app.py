@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from weather_api import *
 
 app = Flask(__name__)
 
@@ -31,3 +32,10 @@ def fortune_results():
 
     return render_template('fortune_results.html', fortune=fortune)
        
+@app.route('/weatherform')
+def foo():
+    return weather_form()
+
+@app.route('/weather_results')
+def woo():
+    return weather_results()
